@@ -6,7 +6,7 @@ public class RegistryTest {
     private Registry registry = new Registry();
     @Test
     public void validateRegistryResult() {
-        Person person = new Person();
+        Person person = new Person("godofredo", 1651461, 18, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.VALID, result);
     }
@@ -52,7 +52,6 @@ public class RegistryTest {
         registry.registerVoter(person);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.DUPLICATED, result);
-
     }
     @Test
     public void shouldBenullPersonName(){
