@@ -137,21 +137,21 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 				
 4) Condiciones Limite
 		
-	caso 1:
+	-caso 1:
 		0> edad <=150
-	caso 2:
+	-caso 2:
 		tarifa_base<0
-	caso 3:
+	-caso 3:
 		diasAntelacion < 0
-	caso 4:
+	-caso 4:
 		condiciones de caso 1,2,3
-	caso 5:
+	-caso 5:
 		condiciones de caso 1,2,3
-	caso 6:
+	-caso 6:
 		condiciones de caso 1,2,3
-	caso 7:
+	-caso 7:
 		condiciones de caso 1,2,3
-	caso 8:
+	-caso 8:
 		condiciones de caso 1,2,3
 
 5) Casos de pruebas
