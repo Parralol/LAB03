@@ -72,23 +72,29 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
    
 3) 
 	**Caso de prueba 1**
-	Parametros: 
-				TarifaBase = 51651
+	
+ 	Parametros: 
+	
+    				TarifaBase = 51651
 				diasAntelacion = 15
 				edad = 0
 				
 				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
 				
 	**Caso de prueba 2**
-	Parametros:
-				TarifaBase = -1
+	
+ 	Parametros:
+	
+    				TarifaBase = -1
 				diasAntelacion = 15
 				edad = 18
 				
 				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
 				
 	**Caso de prueba 3**
-	Parametros:
+
+ 	Parametros:
+
 				TarifaBase = 16516
 				diasAntelacion = -1
 				edad = 20
@@ -96,7 +102,9 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
 				
 	**Caso de prueba 4**
+   
 	Parametros:
+
 				TarifaBase = 123456
 				diasAntelacion = 20
 				edad = 18
@@ -104,7 +112,9 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 				Resultado esperado: 117283.2
 				
 	**Caso de prueba 5**
-	Parametros:
+	
+ 	Parametros:
+	
 				TarifaBase = 123456
 				diasAntelacion = 20
 				edad = 66
@@ -112,49 +122,71 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 				Resultado esperado: 113579.52
 
 	**Caso de prueba 6**
-	Parametros:
-				TarifaBase = 123456
+	
+ 	Parametros:
+	
+    				TarifaBase = 123456
 				diasAntelacion = 21
 				edad = 18
 				
 				Resultado esperado: 104937.6
 				
 	**Caso de prueba 7**
-	Parametros:
-				TarifaBase = 123456
+	
+ 	Parametros:
+	
+    				TarifaBase = 123456
 				diasAntelacion = 21
 				edad = 17
 				
 				Resultado esperado: 98764.8
 				
 	**Caso de prueba 8**
+	
 	Parametros:
-				TarifaBase = 123456
+
+   				TarifaBase = 123456
 				diasAntelacion = 21
 				edad = 66
 				
 				Resultado esperado: 95061.12
 				
-4) Condiciones Limite
+5) Condiciones Limite
 		
 	-caso 1:
-		0> edad <=150
+	
+  		0> edad <=150
+	
 	-caso 2:
-		tarifa_base<0
-	-caso 3:
+	
+  		tarifa_base<0
+	
+ 	-caso 3:
+   
 		diasAntelacion < 0
+	
 	-caso 4:
-		condiciones de caso 1,2,3
-	-caso 5:
-		condiciones de caso 1,2,3
-	-caso 6:
-		condiciones de caso 1,2,3
-	-caso 7:
-		condiciones de caso 1,2,3
-	-caso 8:
-		condiciones de caso 1,2,3
 
-5) Casos de pruebas
+		condiciones de caso 1,2,3
+	
+	 -caso 5:
+
+  		condiciones de caso 1,2,3
+
+ 	-caso 6:
+
+  		condiciones de caso 1,2,3
+
+ 	-caso 7:
+
+ 		condiciones de caso 1,2,3
+
+ 	-caso 8:
+
+  		condiciones de caso 1,2,3
+
+
+7) Casos de pruebas
 
 	Caso 1
 
