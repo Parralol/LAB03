@@ -28,7 +28,8 @@ Copiar el código de la pestaña maven y pegar el encabezado de “propiedades�
 <properties>
 <maven.compiler.target>1.8</maven.compiler.target>
 <maven.compiler.source>1.8</maven.compiler.source>
-</properties> ```
+</properties>
+``` 
 
 Una vez dentro del editor de codigo intellj , dentro del archive pom , editamos las propiedades
 Y dependencias para que el codigo compile
@@ -56,11 +57,12 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 		- Los dias de antelacion sean menores a 0 
 		
 2)
+## Tabla
    | Número | Clase de equivalencia (en lenguaje natural o matematico) | Resultado |
    |------|--------------------------------------------------------|---------|
-   |1     | 0 > edad <= 150 										   | Incorrecto |
+   |1     | 0 > edad <= 150 					| Incorrecto |
    |2      | tarifa_base < 0                                          | Incorrecto |
-   |3      | dias < 0												   |Incorrecto|
+   |3      | dias < 0							  |Incorrecto|
    | 4      | Con edad de 17 años no tener el 5% aplicado a descuento  | Incorrecto |
    | 5      | Con edad > 65 no tener el 8% aplicado a descuento		   | Incorrecto |
    | 6      | No tener el descuento del 15% aplicado con 20 dias de antelacion | Incorrecto |
