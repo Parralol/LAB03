@@ -55,7 +55,8 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 		- La tarifa base sea negativa
 		- Los dias de antelacion sean menores a 0 
 		
-2) | Número | Clase de equivalencia (en lenguaje natural o matematico) | Resultado |
+2)
+   | Número | Clase de equivalencia (en lenguaje natural o matematico) | Resultado |
    |------|--------------------------------------------------------|---------|
    |1     | 0 > edad <= 150 										   | Incorrecto |
    |2      | tarifa_base < 0                                          | Incorrecto |
