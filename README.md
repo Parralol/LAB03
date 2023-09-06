@@ -28,7 +28,8 @@ Copiar el código de la pestaña maven y pegar el encabezado de “propiedades�
 <properties>
 <maven.compiler.target>1.8</maven.compiler.target>
 <maven.compiler.source>1.8</maven.compiler.source>
-</properties> ```
+</properties>
+``` 
 
 Una vez dentro del editor de codigo intellj , dentro del archive pom , editamos las propiedades
 Y dependencias para que el codigo compile
@@ -44,7 +45,150 @@ y el comando
 ``` mvn compile ```
 
 
+##Diseño de pruebas
 
+
+1) De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
+arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
+
+	a) deberia lanzar excepcion cuando:
+		- La edad sea menor a 0 o mayor o igual a 150
+		- La tarifa base sea negativa
+		- Los dias de antelacion sean menores a 0 
+		
+2)
+## Tabla
+   | Número | Clase de equivalencia (en lenguaje natural o matematico) | Resultado |
+   |------|--------------------------------------------------------|---------|
+   |1     | 0 > edad <= 150 					| Incorrecto |
+   |2      | tarifa_base < 0                                          | Incorrecto |
+   |3      | dias < 0							  |Incorrecto|
+   | 4      | Con edad de 17 años no tener el 5% aplicado a descuento  | Incorrecto |
+   | 5      | Con edad > 65 no tener el 8% aplicado a descuento		   | Incorrecto |
+   | 6      | No tener el descuento del 15% aplicado con 20 dias de antelacion | Incorrecto |
+   | 7      | Tener el descuento acumulado de menor de edad y 20 dias de antelacion | Correcto |
+   | 8		| Tener el descuento acumulado de mayor de 65 y 20 dias de antelacion | Correcto |
+   
+   
+3) 
+	**Caso de prueba 1**
+	
+ 	Parametros: 
+	
+    				TarifaBase = 51651
+				diasAntelacion = 15
+				edad = 0
+				
+				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
+				
+	**Caso de prueba 2**
+	
+ 	Parametros:
+	
+    				TarifaBase = -1
+				diasAntelacion = 15
+				edad = 18
+				
+				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
+				
+	**Caso de prueba 3**
+
+ 	Parametros:
+
+				TarifaBase = 16516
+				diasAntelacion = -1
+				edad = 20
+				
+				Resultado esperado: ExcepcionParametrosInvalidos.EDAD_FUERA_RANGO
+				
+	**Caso de prueba 4**
+   
+	Parametros:
+
+				TarifaBase = 123456
+				diasAntelacion = 20
+				edad = 18
+				
+				Resultado esperado: 117283.2
+				
+	**Caso de prueba 5**
+	
+ 	Parametros:
+	
+				TarifaBase = 123456
+				diasAntelacion = 20
+				edad = 66
+				
+				Resultado esperado: 113579.52
+
+	**Caso de prueba 6**
+	
+ 	Parametros:
+	
+    				TarifaBase = 123456
+				diasAntelacion = 21
+				edad = 18
+				
+				Resultado esperado: 104937.6
+				
+	**Caso de prueba 7**
+	
+ 	Parametros:
+	
+    				TarifaBase = 123456
+				diasAntelacion = 21
+				edad = 17
+				
+				Resultado esperado: 98764.8
+				
+	**Caso de prueba 8**
+	
+	Parametros:
+
+   				TarifaBase = 123456
+				diasAntelacion = 21
+				edad = 66
+				
+				Resultado esperado: 95061.12
+				
+5) Condiciones Limite
+		
+	-caso 1:
+	
+  		0> edad <=150
+	
+	-caso 2:
+	
+  		tarifa_base<0
+	
+ 	-caso 3:
+   
+		diasAntelacion < 0
+	
+	-caso 4:
+
+		condiciones de caso 1,2,3
+	
+	 -caso 5:
+
+  		condiciones de caso 1,2,3
+
+ 	-caso 6:
+
+  		condiciones de caso 1,2,3
+
+ 	-caso 7:
+
+ 		condiciones de caso 1,2,3
+
+ 	-caso 8:
+
+  		condiciones de caso 1,2,3
+
+
+7) Casos de pruebas
+
+	Caso 1
 
 
 
