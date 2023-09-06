@@ -61,7 +61,7 @@ Y vemos que las pruebas compilan pero están vacias
 
 ![image](https://github.com/Parralol/LAB03/assets/123813120/a221136a-8d54-4cdc-887e-d9813c41d7dc)
 
-# Diferencia entre mvn package y mnn Test
+# Diferencia entre mvn package y mvn Test
 
 el ciclo de la construcción del codigo en maven donde el package se realiza primero, seguido de la compilación de las pruebas
 
@@ -79,7 +79,7 @@ Para hacer la ejecución de las pruebas, utilizamos un archetype seguido de la c
 
 ![image](https://github.com/Parralol/LAB03/assets/123813120/21e6eaee-7910-4f28-93fb-1e09933cb59e)
 
-por último compilamos las pruebas con los comnandos mvn test
+por último compilamos las pruebas con los comandos mvn test
 
 ![image](https://github.com/Parralol/LAB03/assets/123813120/93564548-112f-47a3-8a2b-9eaac6f21a70)
 
