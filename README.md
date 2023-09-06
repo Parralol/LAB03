@@ -52,11 +52,12 @@ y el comando
 Y vemos que las pruebas compilan pero están vacias
 
 # creación de las clases
--Gender
--Person
--RegitryResult
-_Registry
--RegistryTest
+
+* Gender
+* Person
+* RegitryResult
+* Registry
+ *RegistryTest
 
 ![image](https://github.com/Parralol/LAB03/assets/123813120/a221136a-8d54-4cdc-887e-d9813c41d7dc)
 
