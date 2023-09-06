@@ -4,6 +4,10 @@ import org.junit.Assert;
 import org.junit.Test;
 public class RegistryTest {
     private Registry registry = new Registry();
+    /***
+     * Valida si el resultado del registro es valido colocando los datos apropiados
+     * 
+     */
     @Test
     public void validateRegistryResult() {
         Person person = new Person("godofredo", 1651461, 18, Gender.MALE, true);
@@ -12,6 +16,9 @@ public class RegistryTest {
     }
     // TODO Complete with more test cases
 
+    /**
+     * Test con otros datos validos
+     */
     @Test
     public void ShouldBeValid(){
         Person person = new Person("godofredo", 1651461, 18, Gender.MALE, true);
@@ -19,6 +26,9 @@ public class RegistryTest {
         Assert.assertEquals(RegisterResult.VALID, result);
     }
 
+    /**
+     * deberia dar la respuesta de muerto
+     */
     @Test
     public void ShouldBeDeadth(){
         Person person = new Person("godofredo", 1651461, 18, Gender.MALE, false);
