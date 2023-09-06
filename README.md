@@ -40,14 +40,59 @@ Y dependencias para que el codigo compile
 
 # Compilar y ejecutar
 Ejecutamos los commandos mvn package dentro de la terminal de intelligj
+
 ``` mvn package ```
 
 y el comando
 
-``` mvn compile ```
+``` mvn test ```
+
+![image](https://github.com/Parralol/LAB03/assets/123813120/772197a9-7dd0-42c0-8130-f184a5adc11e)
+
+Y vemos que las pruebas compilan pero están vacias
+
+# creación de las clases
+-Gender
+-Person
+-RegitryResult
+_Registry
+-RegistryTest
+
+![image](https://github.com/Parralol/LAB03/assets/123813120/a221136a-8d54-4cdc-887e-d9813c41d7dc)
+
+# Diferencia entre mvn package y mnn Test
+
+el ciclo de la construcción del codigo en maven donde el package se realiza primero, seguido de la compilación de las pruebas
+
+El comando package, toma el codigo y lo guarda en un formato, ejemplo .JAR
 
 
-##Diseño de pruebas
+# creación de pruebas
+
+En esta imagen podemos ver las pruebas ejecutandose con exito, se realizaron 7 pruebas, donde se valida si el registro admite el voto o no
+![image](https://github.com/Parralol/LAB03/assets/123813120/b809fd4a-e95b-43d3-ab63-af161bda0981)
+
+# ejecución pruebas con maven
+
+Para hacer la ejecución de las pruebas, utilizamos un archetype seguido de la compilación. 
+
+![image](https://github.com/Parralol/LAB03/assets/123813120/21e6eaee-7910-4f28-93fb-1e09933cb59e)
+
+por último compilamos las pruebas con los comnandos mvn test
+
+![image](https://github.com/Parralol/LAB03/assets/123813120/93564548-112f-47a3-8a2b-9eaac6f21a70)
+
+
+
+
+
+
+
+
+
+
+
+## Diseño de pruebas
 
 
 1) De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
