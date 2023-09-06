@@ -1,6 +1,7 @@
 # LAB03
 # Integrantes 
 Gabriel Alejandro Silva Lozada
+
 Santiago Nicolas Parra Giraldo
 
 # ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO
@@ -18,7 +19,8 @@ Despues elegir el Jnunit elegir la actulización 4.13.2
 
 Copiar el código de la pestaña maven y pegar el encabezado de “propiedades” con el fin de cambiar la versión del compilador a la  version 8 java
 
-``` <!-- https://mvnrepository.com/artifact/junit/junit -->
+```
+<!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
@@ -188,9 +190,28 @@ arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la 
 
 7) Casos de pruebas
 
-	Caso 1
-
-
+```
+    @Test
+    public void shouldApplyMinorityAgeDiscount(){
+        double res = CalculadorDescuentos.calculoTarifa(123456, 15 ,0);
+        Assert.assertTrue(Double.toString(res), (res== 117283.20000));
+    }
+    @Test
+    public void shouldApplySixtyFive(){
+        double res = CalculadorDescuentos.calculoTarifa(123456, 15 ,66);
+        Assert.assertTrue(Double.toString(res), (res== 117283.20000));
+    }
+    @Test
+    public void ShouldDiscountDiasAntelacion(){
+        double res = CalculadorDescuentos.calculoTarifa(123456, 15 ,0);
+        Assert.assertTrue(Double.toString(res), (res== 104937.6));
+    }
+    @Test
+    public void shouldApplyMinorityAndDiasAntelacion(){
+        double res = CalculadorDescuentos.calculoTarifa(123456, 21 ,66);
+        Assert.assertTrue(Double.toString(res), (res== 95061.12));
+    }
+```
 
 
 
